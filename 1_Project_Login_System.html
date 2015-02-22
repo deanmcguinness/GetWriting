@@ -7,73 +7,116 @@ if ($_POST['username']{
 ?>
 -->
 
+<!-- View DIV to fix the box problem -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 
-	
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="2_project.css" />
 		<title>Login Option</title>
+		
+		<img src="H:\Project\jkr.jpg"
+		style="width:80%;height:35%;"/>
+			<nav>
+				<ul class="nav_ul">
+					<li class="nav_li"><a href="H:\Project\index.html">Home</a></li>
+					<li class="nav_li"><a href="H:\Project\1_GetWriting.html">Get Writing</a></li>
+					<li class="nav_li"><a href="H:\Project\index2.html">Fun Facts</a></li>
+					<li class="nav_li"><a href="H:\Project\1_Tutorials.html">Tutorials</a></li>
+					<li class="nav_li"><a href="H:\Project\1_AudioBooks.html">Audio Books</a></li>
+					<li class="nav_li"><a href="H:\Project\1_Project_Login_System.html">Login Option</a></li>
+					<li class="nav_li"><a href="H:\Project\1_ContactUs.html">Contact Us</a></li>
+				</ul>						
+			</nav>
 	</head>
 	
 	<body>
-		<header>
-			<img src="C:\Users\S210\OneDrive\NCI\Web Design\Project\homeImage3.png"
-			style="width:900px;height:250px;border-radius:8% 8% 10% 10%;"/>
-				<nav>
-					<ul class="nav_ul">
-						<li class="nav_li"><a href="C:\Users\S210\OneDrive\NCI\Web Design\Project\1_Home.html">Home</a></li>
-						<li class="nav_li"><a href="C:\Users\S210\OneDrive\NCI\Web Design\Project\1_GetWriting.html">Get Writing</a></li>
-				<li class="nav_li"><a href="#"><del>Brainstorming</del></a></li>
-				<li class="nav_li"><a href="#"><del>Take Notes</del></a></li>
-				<li class="nav_li"><a href="#"><del>Top Sellers</del></a></li>
-						<li class="nav_li"><a href="C:\Users\S210\OneDrive\NCI\Web Design\Project\1_Project_Login_System.html">Login Option</a></li>
-					</ul>						
-				</nav>
-		</header>
-		
-			<form id="loginForm" action="1_registration.html" method="post" enctype="multipart/form-data";>
+	
+			<div id="loginContainer"> 
 				<div id="leftnav">
-					<table border="1" align="right" bgcolor="ffffcc" border="3" summary="login">		
-						<th colspan="1">Please log in below</th>
-							<tr>
-								<td>Username: <input type="text" name="username" placeholder="Email address"/><br/></td>
-							</tr>
-							<tr>
-								<td>Password: <input type="password" name="password"><br/></td>
-							</tr>
-							<tr>
-								<td><input type="submit" value="Login" name="Submit"/></td>
-							</tr>
-					</table>
-				</div>
-			</form>
-			
-
-			<h1>Please register below</h1>
-				<mark>Ensure that the attributes are correct</mark>
-					<form id="regForm" action="1_registration.html" method="post" enctype="multipart/form-data";>
-						<div id="rightnav">
-					First Name:		<input type="text" name="name"/><br/>
-					Last Name: 		<input type="text" name="name"><br/>
-					Email:			<input type="email" name="email"><br/>
-			<mark>	Image:</mark>	<input name="File1" type="File" /><br/>
-					Male			 <input type="radio" name="rbtest" value="one" checked="checked" title="radio button1 sample">
-					Female: 		<input type="radio" name="rbtest" value="two" title="radio button2 sample"><br>
-					Address:   		<input type="text" name="address"><br/>
-					County: 		<input type="text" name="name"></br>
-					Country:		<select name="Country">
-										<option value="0">Select Country</option>
-										<option value="1">Ireland</option>
-										<option value="2">United Kingdom</option>
-									</select><br/>
-									<input type="submit" value="Submit" name="Submit" />
-
-					</div>
+					<form id="loginForm" action="1_registration.html" method="post" enctype="multipart/form-data";>
+				
+						<table border="1" align="right" bgcolor="ffffff" border="3" summary="login">		
+							<th colspan="1">Please log in below</th>
+								<tr>
+									<td>Username: <input type="text" name="username" placeholder="Email address"/><br/></td>
+								</tr>
+								<tr>
+									<td>Password: <input type="password" name="password"><br/></td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="Login" name="Submit"/></td>
+								</tr>
+						</table>
+					
 					</form>
-		
+				</div>
+
+				<div id="rightnav">
+					<h1><SPAN STYLE="color: black; font-size: 14pt">Please register below</SPAN></h1>
+							<form id="regForm" action="1_registration.html" onsubmit="return validateForm()" method="post" enctype="multipart/form-data";>
+							<label>	
+								<input type="text" name="fname" placeholder="First Name"/>
+							</label>	
+							<label>	
+								<input type="text" name="lname" placeholder="Last Name">
+							</label>	
+							<label>	
+								<input type="email" name="email" placeholder="Email Address">
+							</label>		
+							<label>	
+							Male			 <input type="radio" name="rbtest" value="one" checked="checked" title="radio button1 sample">
+							</label>	
+							<label>	
+							Female: 		<input type="radio" name="rbtest" value="two" title="radio button2 sample">
+							</label>	
+							<label>	
+								<input type="text" name="address" placeholder="Address  ">
+							</label>	
+							<label>	
+								<input type="text" name="country" placeholder="County   ">
+							</label>			
+							<label>	
+								<select name="Country">
+									<option>Select Province</option>
+									<option>Connacht</option>
+									<option>Leinster</option>
+									<option>Munster</option>
+									<option>Ulster</option>
+								</select>
+							</label>
+							<label>	
+								<input type="text" name="name" placeholder="Country   ">
+							</label>					
+							<label>	
+											<input type="submit" value="Submit" name="Submit" />
+							</label>	
+									<!-- Do an onclick event trigger -->
+
+						</form>
+				</div>
+			
+			</div>
+			
+		<div id="footer"><p>#<a href="https://www.getwriting.com">GetWriting</a></p></div>
+
+	<script>	
+		function validateForm() {
+
+		var x = document.forms["regForm"]["fname"].value;
+
+		if (x == null || x == "") {
+
+			alert("First name must be filled out");
+
+        return false;
+		}
+	}
+	</script>
+	
 	</body>
 </html>

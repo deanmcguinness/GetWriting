@@ -1,0 +1,213 @@
+body
+{
+background-color: #490000;
+padding-left:50px;
+padding-bottom:20px;
+padding-top:10px;
+}
+
+#wrapper
+{
+border: 2px solid;
+border-radius: 25px;
+padding-right:30px;
+padding-top:10px;
+padding-left:30px;
+background-color:black;
+height:1900px;
+width:1100px;
+float:centre;
+}
+@media screen and (max-width: 980px) {
+	#wrapper {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+#wrapper img
+{
+border: 2px solid;
+border-radius: 25px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#divlee
+{
+height:3%;
+width:100%;
+float:left;
+text-align:center;
+}
+#divOne
+{
+border: 2px solid;
+border-radius: 25px;
+Padding-top:15;
+padding-bottom:15px;
+padding:15px;
+background-color:grey;
+height:10%;
+width:94%;
+
+float:left;
+}
+#divOne img
+{
+width:80%;
+max-height:100%;
+}
+#divTwo
+{
+background-color:grey;
+Padding-top:15;
+padding-bottom:15px;
+padding:15px;
+border: 2px solid;
+border-radius: 25px;
+height:57%;
+width:38%;
+float:right;
+}
+#divTwoA img
+{
+height:100%;
+width:100%;
+float:left;
+}
+#divTwoB img
+{
+height:100%;
+width:100%;
+float:right;
+}
+#divTwoC img
+{
+height:100%;
+width:100%;
+float:left;
+}
+
+#divThree
+{
+padding-top:20px;
+padding:15px;
+border: 2px solid;
+border-radius: 25px;
+height:57%;
+width:38%;
+background-color:grey;
+float:left;
+}
+#divOneA
+{
+
+height:30%;
+width:90%;
+}
+#divOneA img
+{
+width:100%;
+height:100%;
+}
+#divOneB
+{
+
+height:30%;
+width:90%;
+}
+#divOneB img
+{
+height:100%;
+width:100%;
+}
+#divOneC
+{
+
+height:30%;
+width:90%;
+}
+#divOneC img
+{
+height:100%;
+width:100%;
+}
+#divTwoA
+{
+
+height:30%;
+width:90%;
+}
+#divTwoB
+{
+height:30%;
+width:90%;
+}
+#divTwoC
+{
+
+height:30%;
+width:90%;
+}
+#con
+{
+height:250px;
+width:70%;
+float: right;
+
+}
+#con2
+{
+height:40%;
+width:60%;
+float:left;
+}
+
+​.mediaDiv{margin: 300px auto; padding: 15px; background-color: #FFF}
+@media screen and (min-width: 0){
+ .mediaDiv{width: 500px;}
+}
+@media screen and (min-width: 1000px){
+ .mediaDiv{width: 900px;}
+}
+@media screen and (min-width: 1400px){
+ .mediaDiv{width: 1300px;}
+}
+
+nav 		{
+		background-color: none;
+		padding: none;
+		}
+
+.nav_ul 	{
+		background-color: none;
+		padding: none;
+		text-align: center;
+		position: relative;
+		/* border-style: dashed; */
+		}
+
+.nav_li 	{
+		background-color: #000;
+		color: white;
+		margin: 10px;
+		padding: 10px;
+		list-style-type: none;
+		display: inline-block;
+		border: ridge;
+		border-color: none;
+		}
+
+a 		{
+		color: white;
+		background-color: none;
+		text-decoration: none;
+		font:12pt/2.0em Helvetica, Arial, sans-serief;
+		}
+
